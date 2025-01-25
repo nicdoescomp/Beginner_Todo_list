@@ -2,4 +2,4 @@
 This is one of the first programs I've written at Community College in my first semester.
 <img src='https://raw.githubusercontent.com/nicdoescomp/Images/refs/heads/main/flower.jpeg' alt="Image Banner">
 
-<img src= 'https://raw.githubusercontent.com/nicdoescomp/Images/blob/main/Intro%20to%20prog.pdf' alt="Org Tree"
+<img src= 'https://raw.githubusercontent.com/nicdoescomp/Images/refs/heads/main/Intro%20to%20prog.pdf' alt="Org Tree"
