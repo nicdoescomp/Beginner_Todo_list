@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Include the necessary header files\
+\
+(I used <iostream> and <string> )\
+\
+Define functions:\
+    addTask(tasks[], task_count)\
+        Check if task_count is greater than 9\
+            Display error message: "LIST IS FULL"\
+        Else\
+            Display "Enter A New Task: "\
+            Ignore spaces from input\
+            Get input and store it in tasks[task_count]\
+            Increment task_count\
+\
+    viewTasks(tasks[], task_count)\
+        Display "Current Tasks:"\
+        Loop from i = 0 to i < task_count\
+            Display i + 1, ".", tasks[i]\
+\
+    removeTask(tasks[], task_count)\
+        Declare variable task_num\
+        Display "Enter the task number to delete: "\
+        Get input and store it in task_num\
+\
+        If task_num is within valid range (1 to task_count)\
+            Loop from i = task_num - 1 to i < task_count - 1\
+                Set tasks[i] = tasks[i + 1] (shift tasks left to fill the gap)\
+            Decrement task_count\
+            Display "Task deleted successfully."\
+        Else\
+            Display "Invalid task number. Please try again."\
+\
+Define main function:\
+    Declare and initialize variables:\
+        tasks[10] = \{""\}\
+        task_count = 0\
+        option = -1\
+\
+    Start a while loop until option is not equal to 4\
+        Display menu options\
+        Get input and store it in option\
+\
+        Switch based on option\
+            Case 1: Call addTask(tasks, task_count)\
+            Case 2: Call viewTasks(tasks, task_count)\
+            Case 3: Call removeTask(tasks, task_count)\
+            Case 4: Display "Exiting program..."\
+            Default: Display "Invalid. Please try again."\
+\
+    Return 0\
+}
